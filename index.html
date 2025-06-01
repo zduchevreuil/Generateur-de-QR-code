@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>générateur de QR code </title>
+</head>
+<body>
+    <section>
+        <label>Entrez un text ou un lien:</label>
+        <input type="text" class="qr_text">
+        <button onclick="generateur()" class="generer">Générer</button>
+        <button class="recomencer"><a href="index.html">Recomencer</a></button>
+        <div class="qr_code"></div>
+    </section>
+
+    <!-- Code Javascript -->
+     <script src="qrcode.min.js"></script>
+     <script type="text/Javascript">
+        var qr_text = document.querySelector('.qr_text');
+
+        function generateur() {
+            var qrcode = document.querySelector('.qr_code')
+            qrcode.style.display = 'flex';
+            new QRCode(qrcode ,qr_text.value);
+        }
+     </script>
+</body>
+</html>
